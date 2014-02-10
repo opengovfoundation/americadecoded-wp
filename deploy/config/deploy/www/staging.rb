@@ -1,1 +1,1 @@
-server 'devamericadecoded.org', :app, :web, :db, :primary => true
+server 'dev.americadecoded.org', :app, :web, :db, :primary => true
