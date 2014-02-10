@@ -1,0 +1,93 @@
+{ 	"type": "FeatureCollection",
+	"features":[
+		{	"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [37.5000, -79.0000],
+				"properties": {
+					"place-type":	"state",
+					"place-name": 	"Virginia",
+					"place-state":	"VA",
+					"site-name":	"Virginia Decoded",
+					"site-link":	"http://vacode.org/",
+					"created-by":	"Waldo Jaquith"
+				}
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [28.1000, -81.6000],
+				"properties": {
+					"place-type":	"state",
+					"place-name":	"Florida",
+					"place-state":	"FL",
+					"site-name":	"Sunshine Statutes",
+					"site-link":	"http://www.sunshinestatutes.com",
+					"created-by":	"Florida Society of News Editors and First Amendment Foundation"
+				}
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [39.0000, -76.7000],
+				"properties": {
+					"place-type":	"state",
+					"place-name":	"Maryland",
+					"place-state":	"MD",
+					"site-name":	"Maryland Decoded",
+					"site-link":	"http://www.marylandcode.org",
+					"created-by":	"The OpenGov Foundation"
+				}
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [41.8819, -87.6278],
+				"properties": {
+					"place-type":	"city",
+					"place-name":	"Chicago",
+					"place-state":	"IL",
+					"site-name":	"Chicago Decoded",
+					"site-link":	"http://chicagocode.org",
+					"created-by":	"The OpenGov Foundation"
+				}
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [37.7833, -122.4167],
+				"properties": {
+					"place-type":	"city",
+					"place-name":	"San Francisco",
+					"place-state":	"CA",
+					"site-name":	"San Francisco Decoded",
+					"site-link":	"http://sanfranciscocode.org",
+					"created-by":	"The OpenGov Foundation"
+				}
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [39.9500, -75.1700],
+				"properties": {
+					"place-type":	"city",
+					"place-name":	"Philadelphia",
+					"place-state":	"PA",
+					"site-name":	"Philadelphia Decoded",
+					"site-link":	"http://phillycode.org",
+					"created-by":	"The OpenGov Foundation"
+				}
+			}
+		}
+	]
+}
