@@ -63,13 +63,13 @@
 			<nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
 				<ul class="nav navbar-nav navbar-right social-links">
 					<li class="facebook-link">
-							<a href=""><i class="fa fa-facebook"></i>Facebook</a>
+							<a href="https://www.facebook.com/Opengovfoundation"><i class="fa fa-facebook"></i>Facebook</a>
 					</li>
 					<li class="twitter-link">
-						<a href=""><i class="fa fa-twitter"></i>Twitter</a>
+						<a href="https://twitter.com/foundopengov"><i class="fa fa-twitter"></i>Twitter</a>
 					</li>
 					<li class="tumblr-link">
-						<a href=""><i class="fa fa-tumblr"></i>Tumblr</a>
+						<a href="http://opengovfoundation.tumblr.com/"><i class="fa fa-tumblr"></i>Tumblr</a>
 					</li>
 				</ul>
 				<ul class="nav navbar-nav navbar-right site-nav">
