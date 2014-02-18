@@ -1,4 +1,20 @@
 <?php get_header(); ?>
+<?php
+
+$map = 	<<<EOS
+		<section class="map">
+            <div id="map" class="row">
+                <div class="container">
+                <div class="col-sm-12">
+                <h2>Find Your City and State Code</h2>
+                </div>
+                    <div id="plot-map-container" style="margin:auto;"></div>
+                </div><!--end container-->
+            </div><!--end map row -->
+		</section>
+EOS;
+
+?>
 
 	<div class="container">
 
@@ -8,7 +24,9 @@
 			<article id="post-<?php the_ID(); ?>" <?php post_class('clearfix'); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
 
 				<section class="entry-content clearfix" itemprop="articleBody">
-					<?php the_content(); ?>
+					<?php
+						print str_replace('[[MAP]]', $map, get_the_content());
+					?>
 				</section>
 
 				<footer class="article-footer">
@@ -38,18 +56,7 @@
 
 		<?php endif; ?>
 
-		<section class="map">
 
-            <div id="map" class="row">
-                <div class="container">
-                <div class="col-sm-12">
-                <h2>Find Your City and State Code</h2>
-                </div>
-                    <div id="plot-map-container" style="margin:auto;"></div>
-                </div><!--end container-->
-            </div><!--end map row -->
-
-		</section>
 
 	</div>
 

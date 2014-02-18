@@ -253,8 +253,12 @@ $social-button-size: 35px;
 	li.twitter-link a {
 		background-color: #78cbef;
 	}
-	li.google-plus-link a {
+	li.tumblr-link a {
 		background-color: #df4a32;
+		i {
+			position: relative;
+			left: -1px;
+		}
 	}
 }
 
@@ -387,7 +391,7 @@ nav.primary h1 {
 
 
 .home .feature  {
-	min-height:225px;
+	min-height:235px;
 	padding-top:15px;
 	margin-bottom:10px;
 }
