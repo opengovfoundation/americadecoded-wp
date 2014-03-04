@@ -887,3 +887,15 @@ pullUp
 .btn-action {
 	@extend .btn-success;
 }
+
+/* Sidebar */
+.sidebar {
+	margin-top: 20px;
+}
+
+.widget_search {
+	margin-bottom: 2em;
+	.screen-reader-text {
+		display: none;
+	}
+}
