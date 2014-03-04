@@ -26,7 +26,7 @@
 					"place-state":	"FL",
 					"site-name":	"Sunshine Statutes",
 					"site-link":	"http://www.sunshinestatutes.com",
-					"created-by":	"Florida Society of News Editors and First Amendment Foundation",
+					"created-by":	"Florida Society of News Editors\nand First Amendment Foundation",
 					"status": "active"
 				}
 			}
@@ -139,6 +139,22 @@
 					"site-name":	"Raleigh Decoded (Coming Soon)",
 					"site-link":	"",
 					"created-by":	"The OpenGov Foundation",
+					"status": "development"
+				}
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [25.7877, -80.2241],
+				"properties": {
+					"place-type":	"city",
+					"place-name":	"Miami",
+					"place-state":	"FL",
+					"site-name":	"Miami Decoded (Coming Soon)",
+					"site-link":	"",
+					"created-by":	"Code for Miami",
 					"status": "development"
 				}
 			}

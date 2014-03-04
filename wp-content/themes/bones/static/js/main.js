@@ -10,9 +10,14 @@ var drawIt = function(){
 
 		$.getJSON(urlbase + 'js/instances.json', function(data){
 			instances = data.features;
-console.log(instances);
+
 			$.each(instances, function(){
-				map.plot(this.geometry.coordinates[0], this.geometry.coordinates[1], this.geometry.properties["site-name"], this.geometry.properties["site-link"], this.geometry.properties["status"]);
+				map.plot(
+						this.geometry.coordinates[0],
+						this.geometry.coordinates[1],
+						this.geometry.properties["site-name"] + "\n" + this.geometry.properties["created-by"],
+						this.geometry.properties["site-link"],
+						this.geometry.properties["status"]);
 				if(this.geometry.properties["place-type"] == "state") {
 					map.darkenState(this.geometry.properties["place-state"], .1);
 				}
