@@ -528,10 +528,19 @@ nav.primary h1 {
 .page-help {
 	.btn {
 		margin-top: 1em;
-		margin-bottom: 1.5em;
+		margin-bottom: 1em;
 
 		i {
 			margin-right: 5px;
+		}
+	}
+	.btn-container {
+		text-align: center;
+		border-bottom: 1px dotted #cccccc;
+		margin-bottom: 1em;
+
+		&:last-child{
+			border-bottom: none;
 		}
 	}
 
@@ -546,6 +555,7 @@ body {
     /* The html and body elements cannot have any padding or margin. */
 
 	font-family: $body-stack;
+	font-size: $base-font-size;
 
 	padding-top: 40px;
 }
