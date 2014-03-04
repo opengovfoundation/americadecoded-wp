@@ -10,7 +10,8 @@
 					"place-state":	"VA",
 					"site-name":	"Virginia Decoded",
 					"site-link":	"http://vacode.org/",
-					"created-by":	"Waldo Jaquith"
+					"created-by":	"Waldo Jaquith",
+					"status": "active"
 				}
 			}
 		},
@@ -25,7 +26,8 @@
 					"place-state":	"FL",
 					"site-name":	"Sunshine Statutes",
 					"site-link":	"http://www.sunshinestatutes.com",
-					"created-by":	"Florida Society of News Editors and First Amendment Foundation"
+					"created-by":	"Florida Society of News Editors and First Amendment Foundation",
+					"status": "active"
 				}
 			}
 		},
@@ -33,14 +35,47 @@
 			"type": "Feature",
 			"geometry": {
 				"type": "Point",
-				"coordinates": [39.0000, -76.7000],
+				"coordinates": [38.6000, -77.0367],
+				"properties": {
+					"place-type":	"city",
+					"place-name":	"Washington",
+					"place-state":	"DC",
+					"site-name":	"DC Decoded (Coming Soon)",
+					"site-link":	"",
+					"created-by":	"The OpenGov Foundation",
+					"status": "development"
+				}
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [39.2833, -76.6167],
+				"properties": {
+					"place-type":	"city",
+					"place-name":	"Baltimore",
+					"place-state":	"MD",
+					"site-name":	"Baltimore Decoded",
+					"site-link":	"http://www.baltimorecode.org",
+					"created-by":	"The OpenGov Foundation",
+					"status": "active"
+				}
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [39.5000, -79.0000],
 				"properties": {
 					"place-type":	"state",
 					"place-name":	"Maryland",
 					"place-state":	"MD",
 					"site-name":	"Maryland Decoded",
 					"site-link":	"http://www.marylandcode.org",
-					"created-by":	"The OpenGov Foundation"
+					"created-by":	"The OpenGov Foundation",
+					"status": "active"
 				}
 			}
 		},
@@ -55,7 +90,8 @@
 					"place-state":	"IL",
 					"site-name":	"Chicago Decoded",
 					"site-link":	"http://chicagocode.org",
-					"created-by":	"The OpenGov Foundation"
+					"created-by":	"The OpenGov Foundation",
+					"status": "active"
 				}
 			}
 		},
@@ -70,7 +106,8 @@
 					"place-state":	"CA",
 					"site-name":	"San Francisco Decoded",
 					"site-link":	"http://sanfranciscocode.org",
-					"created-by":	"The OpenGov Foundation"
+					"created-by":	"The OpenGov Foundation",
+					"status": "active"
 				}
 			}
 		},
@@ -85,7 +122,24 @@
 					"place-state":	"PA",
 					"site-name":	"Philadelphia Decoded",
 					"site-link":	"http://phillycode.org",
-					"created-by":	"The OpenGov Foundation"
+					"created-by":	"The OpenGov Foundation",
+					"status": "active"
+				}
+			}
+		},
+		{
+			"type": "Feature",
+			"geometry": {
+				"type": "Point",
+				"coordinates": [35.8189, -78.6447],
+				"properties": {
+					"place-type":	"city",
+					"place-name":	"Raleigh",
+					"place-state":	"NC",
+					"site-name":	"Raleigh Decoded (Coming Soon)",
+					"site-link":	"",
+					"created-by":	"The OpenGov Foundation",
+					"status": "development"
 				}
 			}
 		}
