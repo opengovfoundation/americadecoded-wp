@@ -47,7 +47,7 @@ function bones_ahoy() {
 	// cleaning up random code around images
 	add_filter( 'the_content', 'bones_filter_ptags_on_images' );
 	// cleaning up excerpt
-	add_filter( 'excerpt_more', 'bones_excerpt_more' );
+	add_filter( 'the_excerpt', 'bones_excerpt_more' );
 
 } /* end bones ahoy */
 
@@ -357,10 +357,10 @@ function bones_filter_ptags_on_images($content){
 }
 
 // This removes the annoying […] to a Read More link
-function bones_excerpt_more($more) {
+function bones_excerpt_more($output) {
 	global $post;
 	// edit here if you like
-	return '...  <a class="excerpt-read-more" href="'. get_permalink($post->ID) . '" title="'. __( 'Read', 'bonestheme' ) . get_the_title($post->ID).'">'. __( 'Read more &raquo;', 'bonestheme' ) .'</a>';
+	return $output . '  <a class="excerpt-read-more" href="'. get_permalink($post->ID) . '" title="'. __( 'Read', 'bonestheme' ) . get_the_title($post->ID).'">'. __( 'Read more &raquo;', 'bonestheme' ) .'</a>';
 }
 
 /*
