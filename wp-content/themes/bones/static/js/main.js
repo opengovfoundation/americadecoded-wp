@@ -1,11 +1,16 @@
-var map, paper, pageWidth = 800;
+var map, paper;
 
 var drawIt = function(){
 	if($('#plot-map-container').length > 0) {
 		paper = new ScaleRaphael('plot-map-container', 950, 650);
 
 		map = paper.USMap();
-		paper.scaleAll(pageWidth/map.width);
+		paper.scaleAll($('.map').outerWidth()/map.width);
+
+
+		var svg = document.querySelector("svg");
+		svg.removeAttribute("width");
+		svg.removeAttribute("height");
 
 
 		$.getJSON(urlbase + 'js/instances.json', function(data){
@@ -29,15 +34,17 @@ var drawIt = function(){
 /*
  * Move the content below the floating header
  */
-function fixHeader() {
+function fixSizes() {
 	$('body').css('padding-top', $('.main-header').outerHeight(true));
+
+	paper.changeSize($('.map').outerWidth(), $('.map').outerWidth() / 2);
 }
 
 $(document).ready(function(){
-	fixHeader();
 	drawIt();
+	fixSizes();
 
 	$(window).on("debouncedresize", function( event ) {
-		fixHeader();
+		fixSizes();
 	});
 });
