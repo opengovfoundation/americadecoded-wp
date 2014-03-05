@@ -19,14 +19,25 @@ var drawIt = function(){
 						this.geometry.properties["site-link"],
 						this.geometry.properties["status"]);
 				if(this.geometry.properties["place-type"] == "state") {
-					map.darkenState(this.geometry.properties["place-state"], .1);
+					map.darkenState(this.geometry.properties["place-state"], 0.1);
 				}
 			});
 		});
 	}
+};
+
+/*
+ * Move the content below the floating header
+ */
+function fixHeader() {
+	$('body').css('padding-top', $('.main-header').outerHeight(true));
 }
 
 $(document).ready(function(){
+	fixHeader();
 	drawIt();
 
+	$(window).on("debouncedresize", function( event ) {
+		fixHeader();
+	});
 });

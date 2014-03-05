@@ -59,9 +59,15 @@
 						<h1>America <span class="dec">Decoded</span></h1>
 					</hgroup>
 				</a>
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-nav-content">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</button>
 			</div>
-			<nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
-				<ul class="nav navbar-nav navbar-right social-links">
+			<nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation" id="main-nav-content">
+				<ul class="nav navbar-nav social-links navbar-right">
 					<li class="facebook-link">
 							<a href="https://www.facebook.com/Opengovfoundation"><i class="fa fa-facebook"></i>Facebook</a>
 					</li>
@@ -72,7 +78,7 @@
 						<a href="http://opengovfoundation.tumblr.com/"><i class="fa fa-tumblr"></i>Tumblr</a>
 					</li>
 				</ul>
-				<ul class="nav navbar-nav navbar-right site-nav">
+				<ul class="nav navbar-nav site-nav navbar-right">
 					<?php wp_nav_menu(array('theme_location' => 'main-nav', 'items_wrap' => '%3$s', 'container' => '')) ?>
 				</ul>
 			</nav>

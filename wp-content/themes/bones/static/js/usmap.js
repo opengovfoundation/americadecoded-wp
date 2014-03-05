@@ -84,7 +84,7 @@ Raphael.fn.USMap = function(){
 
     plot: function(lat, lng, message, link, status) {
       var coords = this.convertCoords(lat, lng);
-      console.log(status);
+
       var point = paper.circle(coords[0], coords[1], 10).attr(this.pointStyle[status]);
 
       if(message) {

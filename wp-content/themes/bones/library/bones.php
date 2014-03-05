@@ -144,21 +144,22 @@ function bones_scripts_and_styles() {
 		wp_register_script(   'jquery', "//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js", false);
 		wp_enqueue_script(    'jquery' );
 
-		wp_enqueue_script(     'bootstrap', get_stylesheet_directory_uri() . '/static/js/bootstrap.min.js', false);
-		wp_enqueue_script(     'buoop', get_stylesheet_directory_uri() . '/static/js/buoop.js', false);
-		wp_enqueue_script(     'raphael', get_stylesheet_directory_uri() . '/static/js/raphael.js', array('jquery'));
-		wp_enqueue_script(     'g-rapheal', get_stylesheet_directory_uri() . '/static/js/g.raphael.js', array('raphael'));
-		wp_enqueue_script(     'rapheal-scale', get_stylesheet_directory_uri() . '/static/js/raphael.scale.js', array('raphael'));
-		wp_enqueue_script(     'us-map', get_stylesheet_directory_uri() . '/static/js/usmap.js', array('raphael'));
-		wp_enqueue_script(     'main', get_stylesheet_directory_uri() . '/static/js/main.js', array('jquery'));
-		wp_enqueue_script(     'jquery-sticky', get_stylesheet_directory_uri() . '/static/js/jquery.sticky.js', array('jquery'));
-		wp_enqueue_script(     'jquery-easing', get_stylesheet_directory_uri() . '/static/js/jquery.easing.1.2.js', array('jquery'));
-		wp_enqueue_script(     'jquery-scrollto', get_stylesheet_directory_uri() . '/static/js/jquery.scrollTo-1.4.3.1-min.js', array('jquery'));
-		wp_enqueue_script(     'jquery-localscroll', get_stylesheet_directory_uri() . '/static/js/jquery.localscroll-1.2.7-min.js', array('jquery'));
+		wp_enqueue_script(    'bootstrap', get_stylesheet_directory_uri() . '/static/js/bootstrap.min.js', false);
+		wp_enqueue_script(    'buoop', get_stylesheet_directory_uri() . '/static/js/buoop.js', false);
+		wp_enqueue_script(    'raphael', get_stylesheet_directory_uri() . '/static/js/raphael.js', array('jquery'));
+		wp_enqueue_script(    'g-rapheal', get_stylesheet_directory_uri() . '/static/js/g.raphael.js', array('raphael'));
+		wp_enqueue_script(    'rapheal-scale', get_stylesheet_directory_uri() . '/static/js/raphael.scale.js', array('raphael'));
+		wp_enqueue_script(    'us-map', get_stylesheet_directory_uri() . '/static/js/usmap.js', array('raphael'));
+		wp_enqueue_script(    'main', get_stylesheet_directory_uri() . '/static/js/main.js', array('jquery'));
+		wp_enqueue_script(    'jquery-sticky', get_stylesheet_directory_uri() . '/static/js/jquery.sticky.js', array('jquery'));
+		wp_enqueue_script(    'jquery-easing', get_stylesheet_directory_uri() . '/static/js/jquery.easing.1.2.js', array('jquery'));
+		wp_enqueue_script(    'jquery-scrollto', get_stylesheet_directory_uri() . '/static/js/jquery.scrollTo-1.4.3.1-min.js', array('jquery'));
+		wp_enqueue_script(    'jquery-localscroll', get_stylesheet_directory_uri() . '/static/js/jquery.localscroll-1.2.7-min.js', array('jquery'));
+		wp_enqueue_script(    'jquery-debounce', get_stylesheet_directory_uri() . '/static/js/jquery.debouncedresize.js', array('jquery'));
 
-		wp_enqueue_script(     'bones-modernizr' );
-		wp_enqueue_style(      'main-stylesheet' );
-		wp_enqueue_style(      'bones-ie-only' );
+		wp_enqueue_script(    'bones-modernizr' );
+		wp_enqueue_style(     'main-stylesheet' );
+		wp_enqueue_style(     'bones-ie-only' );
 
 		$wp_styles->add_data( 'bones-ie-only', 'conditional', 'lt IE 9' ); // add conditional wrapper around ie stylesheet
 
