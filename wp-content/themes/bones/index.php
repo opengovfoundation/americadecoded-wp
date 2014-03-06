@@ -8,7 +8,7 @@
 
 		<?php if(is_home()) : ?>
 			<?php
-				// Get all children of this post; these are our testimonials.
+				// Get the news post.
 				$args = array(
 					'name' => 'news',
 					'post_type' => 'page'
