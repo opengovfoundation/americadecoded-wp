@@ -528,6 +528,39 @@ nav.primary h1 {
 
 }
 
+.page-about article.page {
+  text-align: center;
+}
+
+header.article-header {
+  text-align: center; // (redundant, but can't hurt)
+}
+
+section.entry-content {
+  text-align: left;
+}
+.page-about section.entry-content {
+  font-size: 1.2em;
+  line-height: 1.5em;
+  margin: 0 auto;
+  width: 70%;
+}
+
+ul.about-list {
+  font-size: 1.2em;
+
+  li {
+    padding-left: 40px;
+    text-indent: -40px;
+
+    img {
+      margin-right: 15px; // tweak to get these to line up right. The images SHOULD all be the same, so it soul work, but you can see it doesn’t perfectly.
+    }
+  }
+
+}
+
+
 /********END ABOUT*********/
 
 /******** WHY ********/

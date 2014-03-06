@@ -6,6 +6,40 @@
 
 	<div id="inner-content" class="col-sm-8">
 
+		<?php if(is_home()) : ?>
+			<?php
+				// Get all children of this post; these are our testimonials.
+				$args = array(
+					'name' => 'news',
+					'post_type' => 'page'
+				);
+
+				// The Query
+				$news_page_query = new WP_Query( $args );
+			?>
+
+			<?php if ( $news_page_query->have_posts() ) : ?>
+				<?php $news_page_query->the_post(); ?>
+
+				<!-- POSTS PAGE -->
+				<article id="post-<?php the_ID(); ?>" <?php post_class( 'clearfix' ); ?> role="article" itemscope itemtype="http://schema.org/BlogPosting">
+
+					<header class="article-header">
+
+						<h1 class="page-title" itemprop="headline"><?php the_title(); ?></h1>
+
+					</header>
+
+					<section class="entry-content clearfix" itemprop="articleBody">
+						<?php the_content(); ?>
+					</section>
+				</article>
+
+			<?php endif; ?>
+
+			<?php wp_reset_postdata(); ?>
+		<?php endif; ?>
+
 		<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
 
 		<article id="post-<?php the_ID(); ?>" <?php post_class( 'clearfix' ); ?> role="article">
