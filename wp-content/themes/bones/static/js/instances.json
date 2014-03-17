@@ -40,8 +40,8 @@
 					"place-type":	"city",
 					"place-name":	"Washington",
 					"place-state":	"DC",
-					"site-name":	"DC Decoded (Coming Soon)",
-					"site-link":	"",
+					"site-name":	"DC Decoded",
+					"site-link":	"http://dcdecoded.org",
 					"created-by":	"The OpenGov Foundation",
 					"status": "development"
 				}
